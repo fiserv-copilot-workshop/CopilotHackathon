@@ -5,8 +5,8 @@
 Build an **Expense Tracker** microservice that helps users log daily expenses and visualize their spending patterns. The system should allow users to add expenses with categories, view spending summaries, and get insights into their financial habits.
 
 ### Core Requirements:
-- **Frontend**: Frontend interface for adding expenses and viewing summaries
-- **Backend**: RESTful API (.NET Core, Python Flask, or Node.js Express) for expense management
+- **Frontend**: Frontend interface for adding expenses and viewing summaries (React, Typescript & Material UI)
+- **Backend**: RESTful API (.NET Core) for expense management
 - **Data Management**: Store expenses with amount, category, date, and description
 - **Visualization**: Simple charts/graphs showing spending by category and over time
 - **Categories**: Predefined spending categories (Food, Transport, Entertainment, etc.)
@@ -83,3 +83,52 @@ Quick additions for teams that finish early:
 - ✅ Basic styling/layout
 
 This challenge combines practical business logic, data visualization, and user experience design - perfect for demonstrating real-world application development skills in a short timeframe!
+
+## 5. Running the Project
+
+### Backend Setup
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+2. Build and run the .NET Core API:
+   ```bash
+   dotnet build
+   dotnet run --project ExpenseTracker
+   ```
+3. The API will be available at `http://localhost:5000` or `https://localhost:5001`
+
+### Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Access the application at `http://localhost:3000`
+
+### Running Tests
+1. Backend tests:
+   ```bash
+   cd backend
+   dotnet test
+   ```
+2. Frontend tests:
+   ```bash
+   cd frontend
+   npm test -- --coverage
+   ```
+
+### Accessing the Application
+Once both the backend and frontend are running, you can use the Expense Tracker to:
+- Add new expenses with categories and descriptions
+- View a list of all expenses
+- See monthly spending totals
+- Analyze spending by category with visualizations
+- Delete unwanted expense entries
